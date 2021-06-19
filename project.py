@@ -17,6 +17,9 @@ while playerWins != True:
 
     # get player input
     playerChoice = input().lower()
+    if playerChoice != 'r' and playerChoice != 'p' and playerChoice != 's':
+        print("Terrible choice. Try again.")
+        continue
 
     # randomly choose for npc
     computerChoice = random.choice(lst)
